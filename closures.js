@@ -12,3 +12,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+
+
+
