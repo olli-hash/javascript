@@ -8,7 +8,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 https://expressjs.com/en/4x/api.html#res.render
 `
 
-var re = /.*/
+var re = /.*/g
 
 
 
