@@ -1,5 +1,6 @@
 
 var arrays = new (function(a,b){
+	// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     this.a = a
     this.b = b
@@ -29,10 +30,50 @@ var arrays = new (function(a,b){
 	
 	
 	
+	// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		
+	function stacksize_class (a,b) {
+		
+		this.stack = a
+		
+		this.BB = b
+		
+		
+	}	
 	
 	
+	
+	
+	// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	// number relations...				x / 10 ....  x / 100 .... 
+	
+	function fraction_class (a,b) {
+		
+		this.a = a
+		this.b = b
+		
+	}
+	
+	fraction_class.prototype.use = function () {
+	
+		return this.a / this.b
+		
+	}
+	
+	fraction_class.prototype.use_V = function () {
+	
+		return this.b / this.a
+		
+	}
+	
+	
+	fraction_class.prototype.fra = fraction_class.prototype.use 
+	
+	fraction_class.prototype.fra_V = fraction_class.prototype.use_V
+	
+	
+	
 	
 	var dez_10 = 7
 	var dez_100 = 75
