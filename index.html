@@ -18,6 +18,10 @@
             div#aaa {  border: 2px solid black;  padding:10px;  }
             
             button {  padding: 3px 80px;       }
+			
+			
+			#output1 { background-color: #88f; padding: 5px; border: 1px solid black; color: #fff; 
+						box-shadow: 5px 10px 11px 3px #888888;  margin-bottom: 22px;  }
 
         }
         
@@ -26,27 +30,45 @@
     <script type = "text/javascript" 
         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     </script>
+	
     <script type = "text/javascript" 
-        src = "the_cell.js">
+													src = "the_cell.js">
     </script>
     <script type = "text/javascript" 
-        src = "closures.js">
+													src = "closures.js">
     </script>
     <script type = "text/javascript" 
-        src = "arrays.js">
+													src = "arrays.js">
     </script>
     <script type = "text/javascript" 
-        src = "magic.js">
+													src = "magic.js">
     </script>
     
     
     
     <script>
 
+		var sData = 'Wisen';
+		function display(){
+			console.log('sData value is %s', this.sData);
+		}
+		display.call(); // sData value is Wisen
+
+	// -------- -------- -------- -------- -------- -------- -------- -------- -------- -------- 
+
+		function a () {}
+		function b () {}
+		function c () {}
+
+
+
         $( document ).ready(function() {
 
             $('button#a').on("click", function(){
             
+			
+				$("#output1").append(a + b + c + display)
+			
                 console.log(arrays)
                 //$("body").append(arrays.toString())
                 $("body").append(JSON.stringify(arrays))
@@ -94,7 +116,7 @@
         
         
         
-        
+        // Welche Datenobjekte bleiben hier "stehen" ?   == Alle; Jede Variable, jede Funktion, jedes Objekt
         
     </script>
 </head>
@@ -105,6 +127,11 @@
 <button id="c">C</button>
 <button id="d">D</button>
 <br>
+<div id="output1">
+</div>
+
+- Deklarationen
+
 
 </body>
 </html>
