@@ -1,0 +1,17 @@
+
+        @import "druck-stylesheet.css" print, embossed;
+       /* @import 'viel-platz.css' screen and (min-width: 600px);*/
+       @media print {      }
+       @media screen {
+
+            div, p { color: #333333; margin: 3px;	}
+            div#aaa > div {   border: 1px solid black;    }
+            div#aaa {  border: 2px solid black;  padding:10px;  }
+
+            button {  padding: 3px 80px;       }
+
+
+			#output1 { background-color: #88f; padding: 5px; border: 1px solid black; color: #fff;
+						box-shadow: 5px 10px 11px 3px #888888;  margin-bottom: 22px;  }
+
+        }
